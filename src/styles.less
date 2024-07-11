@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+@main-color: rgb(185, 145, 80);
+@second-color: rgb(255, 175, 24);
+@third-color: rgb(56, 36, 0);
+
+.white-box() {
+  padding: 16px 0 15px 0;
+  background-color: #fff;
+  box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("./assets/fonts/MullerRegular.otf");
+}
+
+@font-face {
+  font-family: MullerBold;
+  src: url("./assets/fonts/MullerBold.otf");
+}
+
+@font-face {
+  font-family: MullerExtraBold;
+  src: url("./assets/fonts/MullerExtraBold.otf");
+}
+
+.container {
+  font-family: Muller, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 159px;
+}
+
+.btn {
+  background-color: @second-color;
+  width: 224px;
+  height: 60px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  padding: 22px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: MullerBold, sans-serif;
+  color: @third-color;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: rgb(197, 133, 12);
+  }
+}
+
+/* 1024 - 1229 */
+@media screen and (max-width: 1229px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
